@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/data.js"></script>
+<script type="text/javascript" src="../js/jsonObjFile.js"></script>
+<script type="text/javascript" src="../js/busDetails.json"></script>
+<script>
+	$(document).ready(function(){
+		$("button#Search").click(function()
+		{
+			$(".container_ticket").hide();
+			$(".travelPlan").show();
+		});
+	
+	});
+</script>
+</head>
+<body>
+<header>
+	<ul>
+		<li>
+			<img src= "../images/flight.png"/>
+		</li>
+		<li>
+			<img src= "../images/hotel.png"/>
+		</li>
+		<li>
+			<img src= "../images/holidays.png"/>
+		</li>
+		<li>
+			<img src= "../images/bus.png"/>
+		</li>
+		<li>
+			<img src= "../images/flight+hotel.png"/>
+		</li>
+		<li>
+			<img src= "../images/more.png"/>
+		</li>
+		<li>
+			<img src= "../images/custSuprt.png"/>
+		</li>
+		<li>
+			<img src= "../images/print.png"/>
+		</li>
+		<li>
+			<img src= "../images/logIcon.png"/>
+		</li>
+	</ul>
+</header>
+	<div class="container_ticket">
+		<div class="heading">
+			<h2>Online Bus ticket Booking</h2>
+			<ul class="journeyType">
+				<li>
+					<input type = "radio" value = "oneway" checked>
+					<label>One-way</label>
+				</li>
+				<li>
+					<input type = "radio" value = "roundtrip">
+					<label>Round-trip</label>
+				</li>
+			</ul>
+		</div>
+		<ul class="journeyDetails">
+			<li>
+				<label>From</label>
+			</li>
+			<li>
+				<label>To</label>
+			</li>
+			<li>
+				<input list="fromNames" id="fromLabel">
+				<datalist id="fromNames">
+				 
+				</datalist>
+			</li>
+			<li>
+				<input list="toNames" id="toLabel">
+				<datalist id="toNames">
+				  
+				</datalist>
+			</li>
+			<li>
+				Date ofJourney
+			</li>
+			<li>
+				Date of Return(Optional)
+			</li>
+			<li>
+				<input type="date" id="fromDate"/>
+			</li>
+			<li>
+				<input type="date" id="toDate"/>
+			</li>
+		</ul>
+		<button id="Search">Search</button>
+	</div>
+	
+	<!------TravelPlan Starts-------->
+	
+	<div class="travelPlan" style="display:none">
+		<div class="headerBar">
+			<ul>
+				<li>
+					<label class="label1"></label>
+					<label class="label2"><img src="../images/arrow.png"></label>
+					<label class="label3"></label>
+					<label class="label4">Depart:</label>
+					<label class="label5"></label>
+					<label class="label6"></label>
+					<button id="modifySearch">Modify Search</button>
+				</li>
+				<li>
+					<label></label>
+				</li>
+			</ul>
+		</div>
+		<div class="busSortDetails">
+			<ul>
+				<li>
+					<label>FILTER:</label>
+				</li>
+				<li>
+					<img src = "../images/time.png">
+				</li>
+				<li>
+					<img src = "../images/board.png">
+				</li>
+				<li>
+					<img src = "../images/drop.png">
+				</li>
+				<li>
+					<img src = "../images/busoptr.png">
+				</li>
+				<li>
+					<img src = "../images/bustype.png">
+				</li>
+			
+			</ul>
+		</div>
+		
+		<table class="travelDetails">
+			<tr>
+				<th>Travels</th>
+				<th>From Time</th>
+				<th>Duration</th>
+				<th>To Time</th>
+				<th>Fare</th>
+				<th>Seats</th>
+				<th>Bus Type</th>
+				<th></th>
+					<ul id="busType">
+						<li>
+							<input type="checkbox" id="acBus" checked/> 
+							<label>AC</label>
+						</li>
+						<li>
+							<input type="checkbox" id="nonacBus"/> 
+							<label>NON-AC</label>
+						</li>
+						<li>
+							<input type="checkbox" id="sleeperBus"/> 
+							<label>Sleeper</label>
+						</li>
+					</ul>
+				
+			</tr>
+			
+			
+			
+			<ul class="stars" style="display:none">
+				<span><img src="../images/whiteStar.png"/></span>
+				<span><img src="../images/whiteStar.png"/></span>
+				<span><img src="../images/whiteStar.png"/></span>
+				<span><img src="../images/whiteStar.png"/></span>
+				<span><img src="../images/whiteStar.png"/></span>
+			</ul>
+		</table>
+	</div>
+	
+	
+	
+	<!------TravelPlan Ends-------->
+	
+	
+</body>
+</html>
+
+

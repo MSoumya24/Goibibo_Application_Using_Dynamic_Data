@@ -1,0 +1,318 @@
+body {
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+}
+
+ul li {list-style: none;}
+div.container {
+border: 1px solid gray;
+width: 21%;
+margin: auto;
+}
+ul.movieLists {
+overflow: hidden;
+margin: 0;
+padding: 0;
+}
+ul.movieLists li {
+padding: 5% 0 7% 12%;
+font-weight: bold;
+font-size: 19px;
+}
+ul.movieLists li label:nth-child(2) {
+color: red;
+float: right;
+position: relative;
+left: -26px;
+}
+.searchField
+{
+	display: block;
+overflow: hidden;
+clear: both;
+margin: 2% auto;
+font-size: 21px;
+width: 31%;
+}
+
+
+
+div.container_ticket {
+border: 2px solid #c0d8fa;
+width: 47%;
+margin: 0 0 0 6%;
+position: relative;
+top: 28px;
+height: 293px;
+border-radius: 7px;
+}
+div.container_ticket .heading h2 {
+margin: 0 0 0 6%;
+padding: 1%;
+font-family: arial;
+font-size: 15px;
+float: left;
+}
+div.container_ticket .journeyDetails {
+width: 81%;
+margin:3% auto;
+overflow: hidden;
+}
+header {
+border-bottom: 1px solid #e5e5e5;
+box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+div.container_ticket .journeyDetails li {
+width: 42%;
+float: left;
+padding:0.5%;
+margin-bottom: 1%;
+}
+button#Search {
+background: #2762b0;
+border: none;
+width: 15%;
+height: 31px;
+color: #FFF;
+font-size: 16px;
+font-weight: bold;
+margin: 0.2% 5% 0 0%;
+border-radius: 5px;
+float: right;
+}
+div.headerBar {
+margin: auto;
+}
+input#fromLabel,input#toLabel {
+padding: 7px 8px;
+border-radius: 6px;
+}
+div.headerBar ul {
+overflow: hidden;
+}
+div.headerBar ul li {
+width: 91%;
+float: left;
+margin: 0 0 0 3.9%;
+}
+table.travelDetails {
+width: 90%;
+margin: auto;
+border-collapse: collapse;
+}
+ul#busType {
+width: 15%;
+padding: 0.1%;
+position: absolute;
+right: 99px;
+top: 151px;
+display: none;
+background: #fff;
+}
+input#fromDate, #toDate {
+width: 76.7%;
+height: 18px;
+padding: 7px 8px;
+border-radius: 6px;
+}
+ul#busType li {
+float: left;
+padding: 0% 4% 0 7%;
+border-right: none;
+width: 55%;
+}
+table.travelDetails tr {
+height: 34px;
+border-bottom: 1px solid #eee;
+}
+table.travelDetails tr:nth-child(1) {
+background: #eee;
+}
+.headerBar li:nth-child(2) {
+width: 17%;
+}
+.headerBar li:nth-child(2) label:nth-child(4) {
+margin: 0% 16% 0 2%;
+}
+table.travelDetails td {
+text-align: center;
+padding: 1.4% 0 1.4% 0;
+}
+ul.stars {
+overflow: hidden;
+position: fixed;
+
+}
+ul.stars span {
+float: left;
+}
+table.travelDetails td:last-child {
+width: 13%;
+}
+table.travelDetails td:nth-child(1) {
+width: 15%;
+text-align: left;
+padding: 0 0 0 71px;
+font-family: arial;
+font-size: 13px;
+}
+table.travelDetails td:nth-child(2) {
+width: 10%;
+}
+table.travelDetails td:nth-child(3) {
+width: 10%;
+}
+table.travelDetails td:nth-child(4) {
+width: 10%;
+}
+table.travelDetails td:nth-child(5) {
+width: 10%;
+}
+table.travelDetails td:nth-child(6) {
+width: 10%;
+font-size: 12px;
+color: green;
+}
+ul.stars span img {
+height: 15px;
+padding: 3px;
+margin-top: 1px;
+}
+header ul li {
+float: left;
+padding: 0 0% 0 1%;
+}
+header ul {
+overflow: hidden;
+margin: 0.2% 0 0 0;
+}
+header ul li:nth-child(7) {
+margin: 0 0 0 24%;
+}
+header ul li:nth-child(1) {
+margin: 0 0 0 2%;
+}
+header ul li:nth-child(6), header ul li:nth-child(8), header ul li:nth-child(9) {
+margin-top: 0.6%;
+}
+ul.journeyType {
+overflow: hidden;
+width: 45%;
+margin: 0;
+padding: 0;
+display: inline-block;
+}
+ul.journeyType li {
+float: left;
+margin: 2% 7% 0 6%;
+}
+.heading {
+margin: 1% 0 0 0;
+}
+.busSortDetails ul {
+overflow: hidden;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+width: 90%;
+margin: 1% auto;
+}
+.busSortDetails ul li {
+float: left;
+margin: 0 2.5% 0 3.8%;
+border-right: 1px solid #eee;
+}
+.busSortDetails ul li label {
+color: #999;
+font-weight: 700;
+font-family: arial;
+font-size: 13px;
+display: inline-block;
+}
+.busSortDetails ul li input {
+margin-top: 5%;
+margin-bottom: 5%;
+}
+.busSortDetails ul li img {
+position: relative;
+left: -35px;
+top: 1px;
+}
+.busSortDetails ul li:nth-child(1) {
+border-right: none;
+margin-top: 0.9%;
+}
+.headerBar li:nth-child(1) .label1,.headerBar li:nth-child(1) .label3 {
+color: #2d67b2;
+font-size: 16px;
+font-family: arial,helvetica;
+}
+.headerBar li:nth-child(1) .label5,.headerBar li:nth-child(1) .label6 {
+color: #999;
+font-size: 14px;
+font-family: arial,helvetica;
+font-weight: 600;
+margin: 0 1% 0 0%;
+font-weight: normal;
+}
+.headerBar li:nth-child(1) .label4 {
+color: #999;
+font-size: 14px;
+font-family: arial,helvetica;
+font-weight: 600;
+margin: 0 1% 0 4%;
+font-weight:normal;
+}
+.headerBar .label2 img {
+position: relative;
+top: 3px;
+}
+table.travelDetails th {
+color: #3279c3;
+font-family: arial;
+font-size: 11px;
+}
+button#modifySearch {
+background: #f26722;
+color: #fff;
+border: none;
+width: 8.7%;
+border-radius: 3px;
+height: 24px;
+}
+button.seatSelection {
+background: #f26722;
+color: #fff;
+border: none;
+width:61.5%;
+border-radius: 3px;
+height: 27px;
+font-size: 13px;
+font-weight: 600;
+}
+table.travelDetails td:nth-child(7) {
+width: 13%;
+font-family: arial;
+font-size: 12px;
+}
+table.travelDetails td:nth-child(6) span:last-child {
+position: relative;
+top: 36px;
+right: 43px;
+}
+table.travelDetails td:nth-child(6) span:first-child {
+position: relative;
+margin: 1% 0 4% 0;
+top: -16px;
+left: 25px;
+font-family: arial;
+font-size: 10px;
+}
+table.travelDetails td:nth-child(6) span:nth-child(2) {
+position: relative;
+top: 2px;
+background: green;
+color: #fff;
+padding: 1% 2% 1% 1%;
+}
